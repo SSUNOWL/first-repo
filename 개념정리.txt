@@ -1,0 +1,26 @@
+버전관리 소프트웨어
+git
+
+git -init 으로 현재 폴더에 git명령어를 사용할 수 있게 함
+
+git add 파일명으로 파일 현재상태를 기록
+git commit -m '메모' 파일 현재상태 기록
+-> 히스토리를 열람하고 확인 할 수 있음 띄어쓰기가 안되넹
+두가지인 이유? 이미지는 버전을 관리할 필요가 없다.
+git add로 기록할 파일을 고르고 (staging area로 보냄) staging 이라고 함
+git commit으로 기록명령을 하는 것 (repository 로 저장)
+
+동시에 해주는 명령어도 있긴함
+
+두가지 파일을 동시에 스테이징 하고 싶다.
+git add 파일1, 파일2 ;;;
+git add . -> 모든 파일 스테이징
+
+git status 
+상태창 열기
+
+git log --all --oneilne 으로 내가 commit 내역 조회
+
+-> 기능을 완성했을 때 commit을 하는 것
+( 저장마냥 하는게 아님 )
+버전을 만들 수 있다.
