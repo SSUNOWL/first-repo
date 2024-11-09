@@ -63,6 +63,10 @@ git merge 로 브랜치를 합칠 수 있음
 그냥 원하는 코드만 두고 commit 을 하면 됨
 
 branch 는 협업시 굉장히 중요함
+branch 는 합쳐도 그대로임 삭제가ㅑ 되지 않음
+-> merge를 하면 일반적으로 삭제
+git branch -d  merge 한거
+git branch -D  안한거 삭제
 
 branch를 합치는 여러가지 방법
 
@@ -70,4 +74,11 @@ branch를 합치는 여러가지 방법
 -> 3way merge
 2. 기존 브랜치에 신규 commit이 없는 경우
 -> fast-forward merge ;; 신규 브랜치의 이름을 메인 브랜치로 바꿈
-3. 
+3. rebase ; 
+기존, 신규 브랜치에 commit이 있는 경우 ; 3way merge를 쓸수도 있지만
+신규 브랜치의 commit을 rebase하여 기존 브랜치의 commit뒤로 넘기고, fast-forward merge를 진행한다.
+왜 쓰느냐; branch가 너무 많을 때 자잘한 것도 3way merge하면 log가 너무 복잡해짐
+-> 간단하고 짧은 브랜치들은 rebase 하는게 보기 편함
+--;; 단점 ; conflict가 너무 많이 남
+git rebase master;; 새로운 브랜치로 이동해서 사용
+이후 get merge 신규 브랜치 ( fast-forward merge)
