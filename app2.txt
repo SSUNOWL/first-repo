@@ -4,3 +4,8 @@
 
 master branch
 coupon branch
+
+이제부터 진행해 봅시다.
+2. fast-forward merge
+이는 master branch에는 신규 commit이 없고, couponbranch에만
+변경사항이 있는 것.
