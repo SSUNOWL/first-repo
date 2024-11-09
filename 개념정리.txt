@@ -82,3 +82,9 @@ branch를 합치는 여러가지 방법
 --;; 단점 ; conflict가 너무 많이 남
 git rebase master;; 새로운 브랜치로 이동해서 사용
 이후 get merge 신규 브랜치 ( fast-forward merge)
+4. squash and merge
+3 way merge를 막갈기면 graph 가 너무 어려워보임
+합쳐진것도 쓸데없는게 너무 많아짐
+git merge --squash 를 하게되면 신규 브랜치가 합쳐지면서 main branch에 합쳐지지만
+log가 남지않음 * 3way merge와 달리 텔레포트라고 생각하는게 나음
+-- 안중요한건 squash 갈기자
