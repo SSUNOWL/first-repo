@@ -51,3 +51,7 @@ git branch 브랜치 명 - 브랜치 생성
 git switch 브랜치 명 - 브랜치로 이동
 
 git status 로 확인가능
+
+coupon branch 에 새로운 파일을 만듬
+
+우리가 코드를 짜던 곳은 메인(마스터)브랜치임
