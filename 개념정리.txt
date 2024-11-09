@@ -61,3 +61,5 @@ git merge 로 브랜치를 합칠 수 있음
 그러나 같은 곳을 수정했다면 conflict 가 뜨게 됨
 -> conflict를 해결해 줘야함
 그냥 원하는 코드만 두고 commit 을 하면 됨
+
+branch 는 협업시 굉장히 중요함
