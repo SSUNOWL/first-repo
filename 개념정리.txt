@@ -63,3 +63,11 @@ git merge 로 브랜치를 합칠 수 있음
 그냥 원하는 코드만 두고 commit 을 하면 됨
 
 branch 는 협업시 굉장히 중요함
+
+branch를 합치는 여러가지 방법
+
+1. 각 브랜치에 신규 commit이 있는 경우
+-> 3way merge
+2. 기존 브랜치에 신규 commit이 없는 경우
+-> fast-forward merge ;; 신규 브랜치의 이름을 메인 브랜치로 바꿈
+3. 
