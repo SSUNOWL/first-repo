@@ -119,3 +119,7 @@ git init == repository를 만들어주는 용어
 main branch로 사용 - git branch -M main
 
 git push -u 원격저장소주소 올릴로컬브랜치명
+원격저장소에 backup을 할 수 가 있따
+-u 는 주소를 기억하라는 뜻 -> 알아서 해줌
+원격저장소 url을 변수로 저장할 수 있음
+git remote add 변수명 저장내용
