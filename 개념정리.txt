@@ -87,4 +87,31 @@ git rebase master;; 새로운 브랜치로 이동해서 사용
 합쳐진것도 쓸데없는게 너무 많아짐
 git merge --squash 를 하게되면 신규 브랜치가 합쳐지면서 main branch에 합쳐지지만
 log가 남지않음 * 3way merge와 달리 텔레포트라고 생각하는게 나음
--- 안중요한건 squash 갈기자
+-- 안중요한건 squash 
+
+---
+파일 복구
+git restore 파일명 -> 최근 commit으로 파일명 변경
+git restore --source 커밋아이디 파일명 -> 커밋아이디의 상태로 파일 변경
+git restore --staged 파일명 -> staging 상태 취소
+
+commit 복구
+과거 조작은 불가능하지만 작업은 취소할 수 있음
+git revert 커밋아이디1 2
+git revert HEAD 방금한 commit(revert포함)도 이렇게 복구가능
+merge로 생성된 commit도 가능
+'commit'만 취소하는 것이라서
+a, b, c에서 b 커밋을 취소해도 c 커밋은 그대로 있음
+
+시간을 되돌리기
+git reset --hard 커밋아이디
+git reset --soft 커밋 아이디 -> 변동사항 지우지 말고 스테이징
+git reset --mixed 변동사항 지우지말고 unstage해놓기
+커밋아이디의 시점으로 돌아감  ---> 혼자할때만 쓰자
+
+-------------------
+git이 파일 기록해두는 장소 ; repository
+local에도 파일이 있지만 .git폴더
+온라인 repository 도 만들어둠 for 안정성 and 협업가능
+원격저장소
+git init == repository를 만들어주는 용어
