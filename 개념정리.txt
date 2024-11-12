@@ -152,6 +152,7 @@ git pull == git fetch + git merge
 위의 방법은 그냥 main브랜치에 바로바로 갈기는 거랑 같음
 github에 브랜치를 만들수 있고 관리도 가능하다.
 
+새로운 글
 
 .gitignore파일에 저장소에 올리지않을 파일을 명시할 수 있음
 -> git add .해도 스테이징이 되지않음 (commit되지않음)
