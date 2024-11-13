@@ -182,8 +182,13 @@ feature - 신기능 개발하고 바로 main에 merge
 -----
 코드를 개발을 하던 중 잠깐 보관을 하고 싶다.
 git stash 
+git stash list
 
 옮겨지면 최근 commit과의 차이점을 전부 보관해줌
 파일의 경우는 stash가 안될 수 도 있음
 git stash save '메모내용' -> 메모와함계 보관
 git stash pop -> stash했던 내용 불러옴
+git stash drop 삭제id
+git stash clear
+git stash -p 로 일부만 stasth 하기
+ㄴ commit도 해놓고 merge하는 형식
