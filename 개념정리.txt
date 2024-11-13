@@ -166,3 +166,19 @@ online에서 merge할때도 마찬가지로 3way, squash, rebase할 수 있다.
 .gitignore파일에 저장소에 올리지않을 파일을 명시할 수 있음
 -> git add .해도 스테이징이 되지않음 (commit되지않음)
 
+프로젝트가 커져도 branch; merge를 깔끔하게 하고 싶다
+->상황에 맞는 개발전략 
+GifFlow
+main 안전
+develop(복사본) - 신기능 개발
+feature/기능이름 - 신기능 개발후 잘되면 develop에 merge
+release(임시 main브랜치 ) -develop 완성되면 테스트 -> main에 배포
+hotix - main에서 버그가 발생시 바쁘게 hotfix
+
+trunk-based - 브랜치 하나만 잘관리하자
+main 
+feature - 신기능 개발하고 바로 main에 merge
+
+-----
+코드를 개발을 하던 중 잠깐 보관을 하고 싶다.
+git stash 
